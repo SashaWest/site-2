@@ -3,130 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Better Health by Design Recovery, LLC | Advanced Ambulatory Care</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>Better Health By Design Recovery, LLC | Professional Wellness Solutions</title>
     <style>
-        :root {
-            --primary-blue: #2a69ac;
-            --soft-teal: #48a9a6;
-            --deep-slate: #2d3436;
-            --light-bg: #f9fbfc;
-            --white: #ffffff;
-            --transition: all 0.3s ease;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Open Sans', sans-serif; line-height: 1.6; color: var(--deep-slate); background: var(--white); }
-        h1, h2, h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary-blue); }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 25px; }
-
-        /* HERO SECTION */
-        .hero { 
-            height: 80vh; 
-            display: flex; 
-            align-items: center; 
-            background: linear-gradient(rgba(42, 105, 172, 0.8), rgba(42, 105, 172, 0.6)), 
-                        url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=2000') no-repeat center center/cover;
-            color: var(--white);
-            text-align: center;
-        }
-        .hero-content { width: 100%; }
-        .hero h1 { font-size: 3.5rem; color: var(--white); margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
-        .hero p { font-size: 1.2rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 300; }
-
-        /* ABOUT SECTION */
-        section { padding: 100px 0; }
-        .section-title { text-align: center; margin-bottom: 60px; font-size: 2.2rem; }
-        .section-title::after { content: ''; display: block; width: 60px; height: 3px; background: var(--soft-teal); margin: 20px auto; }
-        
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
-        .about-text p { margin-bottom: 20px; font-size: 1.1rem; color: #555; }
-
-        /* SERVICES SECTION */
-        .services { background: var(--light-bg); }
-        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .service-card { padding: 40px; background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: var(--transition); border-top: 5px solid var(--primary-blue); }
-        .service-card:hover { transform: translateY(-10px); }
-        .service-card h3 { color: var(--soft-teal); margin-bottom: 15px; }
-
-        /* CONTACT SECTION */
-        .contact-info { text-align: center; background: var(--primary-blue); color: var(--white); padding: 80px 25px; border-radius: 20px; }
-        .contact-info h2 { color: var(--white); margin-bottom: 30px; }
-        .email-link { color: var(--white); font-size: 1.5rem; text-decoration: none; font-weight: 600; border-bottom: 2px solid var(--soft-teal); padding-bottom: 5px; transition: var(--transition); }
-        .email-link:hover { opacity: 0.8; }
-
-        /* FOOTER */
-        footer { padding: 50px 0; background: #1a1a1a; color: #999; text-align: center; font-size: 0.9rem; }
-        .footer-details { margin-top: 15px; }
-
-        @media (max-width: 768px) {
-            .about-grid { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 2.5rem; }
-        }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #fff; }
+        header { background: #1a4a5e; color: #fff; padding: 80px 20px; text-align: center; }
+        header h1 { font-size: 3rem; margin: 0; }
+        header p { font-size: 1.2rem; margin-top: 10px; opacity: 0.9; }
+        section { padding: 60px 10% ; border-bottom: 1px solid #eee; }
+        .section-title { color: #1a4a5e; font-size: 2rem; margin-bottom: 30px; border-left: 6px solid #4caf50; padding-left: 15px; }
+        .grid { display: flex; gap: 30px; justify-content: space-between; flex-wrap: wrap; }
+        .card { flex: 1; min-width: 280px; background: #f9f9f9; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .card h3 { color: #2c3e50; margin-top: 0; }
+        .step-list { list-style: none; padding: 0; }
+        .step-item { display: flex; align-items: flex-start; margin-bottom: 25px; }
+        .step-num { background: #4caf50; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 20px; flex-shrink: 0; }
+        .contact-box { background: #f0f4f7; padding: 40px; border-radius: 12px; }
+        .form-field { margin-bottom: 20px; }
+        .form-field label { display: block; font-weight: bold; margin-bottom: 5px; }
+        .form-field div { border: 1px solid #ccc; padding: 12px; background: #fff; border-radius: 4px; min-height: 20px; }
+        footer { background: #2c3e50; color: #ecf0f1; padding: 40px 10%; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        footer div { margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
-    <header class="hero">
-        <div class="container hero-content">
-            <h1>Better Health by Design Recovery</h1>
-            <p>Empowering Wellness Through Personalized Care</p>
-        </div>
+    <header>
+        <h1>Better Health By Design Recovery</h1>
+        <p>Architecting Personalized Pathways to Physical Resilience and Long-Term Wellness</p>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">Who We Are</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p><strong>Better Health by Design Recovery, LLC</strong> is a leading provider in the Health Care and Social Assistance sector, based in Apache Junction, Arizona.</p>
-                    <p>Led by <strong>Deanna Woo</strong>, our team is dedicated to providing specialized ambulatory healthcare and allied services designed to help you reach your recovery goals.</p>
-                    <p>We combine clinical expertise with a personalized, design-focused recovery approach to ensure the highest standard of patient care.</p>
+    <section>
+        <h2 class="section-title">Our Restoration Philosophy</h2>
+        <p>Better Health By Design Recovery, LLC is dedicated to transforming the landscape of ambulatory health services through evidence-based recovery models. We believe that true health is not merely the absence of illness but a carefully designed state of physical and mental vitality. Our facility in Apache Junction serves as a sanctuary for those seeking expert guidance in their journey toward full rehabilitation and strength. By combining advanced clinical knowledge with a patient-first approach, we ensure that every recovery plan is as unique as the individual receiving it. Our team of professionals is committed to bridging the gap between clinical treatment and sustainable, healthy living. We invite you to experience a new standard of healthcare where your recovery is our primary design objective.</p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Specialized Recovery Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Bespoke Rehabilitation</h3>
+                <p>We develop custom recovery protocols tailored to your specific physiological needs and health history. Each program is monitored by expert practitioners to ensure optimal progress and safety. Our goal is to restore your peak functional capacity through targeted therapeutic interventions.</p>
+            </div>
+            <div class="card">
+                <h3>Ambulatory Health Support</h3>
+                <p>Our center provides high-quality outpatient services for patients requiring consistent medical oversight without the need for hospitalization. We focus on stabilizing chronic conditions and managing acute recovery phases effectively. We utilize modern diagnostic insights to track your recovery milestones in real-time.</p>
+            </div>
+            <div class="card">
+                <h3>Integrative Wellness Coaching</h3>
+                <p>Beyond physical recovery, we offer comprehensive guidance on lifestyle adjustments to prevent future health setbacks. This service integrates nutritional advice, stress management, and corrective exercise patterns. We empower you with the tools and knowledge to maintain your health long after the recovery phase.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Core Strategic Advantages</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Evidence-Based Design</h3>
+                <p>Every recovery strategy we implement is rooted in the latest clinical research and proven medical methodologies.</p>
+            </div>
+            <div class="card">
+                <h3>Continuity of Professional Care</h3>
+                <p>You will work with a dedicated team that understands your journey from the initial assessment through to final success.</p>
+            </div>
+            <div class="card">
+                <h3>Advanced Clinic Infrastructure</h3>
+                <p>Our facility is equipped with professional-grade resources designed to facilitate rapid and safe physiological restoration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Our Systematic Recovery Process</h2>
+        <div class="step-list">
+            <div class="step-item">
+                <div class="step-num">1</div>
+                <div>
+                    <strong>Comprehensive Diagnostic Intake</strong>
+                    <p>We begin with a deep analysis of your current health status and recovery goals to build a factual baseline.</p>
                 </div>
-                <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1000" alt="Modern Medical Facility" style="width: 100%; border-radius: 12px; box-shadow: 15px 15px 0 var(--soft-teal);">
+            </div>
+            <div class="step-item">
+                <div class="step-num">2</div>
+                <div>
+                    <strong>Precision Implementation</strong>
+                    <p>Our team executes your personalized recovery plan with careful adjustments based on your body's specific responses.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">3</div>
+                <div>
+                    <strong>Sustainability & Final Validation</strong>
+                    <p>In the final phase, we focus on locking in your gains and providing you with a long-term maintenance strategy.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">Our Expertise</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <h3>Ambulatory Care</h3>
-                    <p>Expert clinical and allied health services delivered in a professional outpatient setting for your comfort and convenience.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Recovery Planning</h3>
-                    <p>Evidence-based recovery programs tailored to the unique physical and design-health needs of every patient.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Allied Health Support</h3>
-                    <p>A comprehensive range of supportive medical and social assistance services to facilitate holistic health restoration.</p>
-                </div>
+    <section>
+        <h2 class="section-title">Secure Your Consultation</h2>
+        <div class="contact-box">
+            <p>Ready to start your designed recovery? Please provide your details below for a confidential assessment.</p>
+            <div class="form-field">
+                <label>Full Name</label>
+                <div>Enter your legal name</div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <div class="contact-info">
-                <h2>Connect With Our Team</h2>
-                <p style="margin-bottom: 40px; font-size: 1.2rem;">Reach out today to schedule a consultation or to learn more about our recovery services.</p>
-                <a href="mailto:info@betterhealthbydesignrecovery.com" class="email-link">info@betterhealthbydesignrecovery.com</a>
+            <div class="form-field">
+                <label>Professional Email Address</label>
+                <div>example@domain.com</div>
+            </div>
+            <div class="form-field">
+                <label>Nature of Recovery Inquiry</label>
+                <div style="height: 60px;">Briefly describe your health objectives...</div>
+            </div>
+            <div style="background: #1a4a5e; color: #fff; display: inline-block; padding: 12px 30px; border-radius: 4px; font-weight: bold; cursor: pointer;">
+                SUBMIT INQUIRY
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="footer-details">
-                <p><strong>Headquarters:</strong> 5275 N Ironwood Dr, Apache Junction, AZ, 85120-9091, United States</p>
-            </div>
-            <p style="margin-top: 20px;">&copy; 2026 Better Health by Design Recovery, LLC. All Rights Reserved. <br> Principal: Deanna Woo.</p>
+        <div>
+            <strong>Better Health By Design Recovery, LLC</strong><br>
+            5275 N Ironwood Dr<br>
+            Apache Junction, AZ, 85120-9091<br>
+            United States
+        </div>
+        <div>
+            <strong>Electronic Inquiry</strong><br>
+            info@betterhealthbydesignrecovery.com<br><br>
+            <em>Dedicated to Excellence in Ambulatory Care.</em>
         </div>
     </footer>
 
